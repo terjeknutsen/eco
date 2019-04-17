@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="BudgetWorkFlow.fsi" />
+    <Compile Include="Dto.fs" />
+    <Compile Include="CommonTypes.fs" />
+    <Compile Include="DomainModel.fs" />
+    <Compile Include="DomainEvents.fs" />
+    <Compile Include="BudgetAggregate.fs" />
+    <Compile Include="AccountAggregate.fs" />
+    <Compile Include="EventSaver.fs" />
+    <Compile Include="BudgetFlow.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="JsonFlatFileDataStore" Version="2.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="FSharp.Core" Version="4.6.2" />
+  </ItemGroup>
+
+</Project>
